@@ -6,7 +6,6 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
-gitgit
 public class Desafio {
 
 
@@ -39,10 +38,11 @@ public class Desafio {
        // driver.findElement(By.xpath("//input[@value='rd2']")).click();
        // driver.findElement(By.xpath("//input[@value='rd3']")).click();
 
-        //driver.findElement(By.xpath("//input[@value='ms1']")).click();
+        driver.findElement(By.name("multipleselect[]")).click();
 
-        //*[@id="HTMLFormElements"]/table/tbody/tr[7]/td/select/option[2]
-        //*[@id="HTMLFormElements"]/table/tbody/tr[5]/td/input[1]
+
+
+
 
         driver.findElement(By.xpath("//input[@value='submit']")).click();
 
@@ -57,6 +57,10 @@ public class Desafio {
         Assert.assertEquals("cb1", driver.findElement(By.id("_valuecheckboxes0")).getText());
 
         Assert.assertEquals("rd1", driver.findElement(By.id("_valueradioval")).getText());
+
+        Assert.assertEquals("ms3", driver.findElement(By.id("_valuemultipleselect0")).getText());
+
+        Assert.assertEquals("dd3", driver.findElement(By.id("_valuedropdown")).getText());
 
     }
 
@@ -76,3 +80,6 @@ public class Desafio {
     }
 
 }
+
+
+//Francisco Xavier
